@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+{% block body %}
+   <h1>Welcome!</h1>
+   <form action="/signin" method="POST">
+        <input type="text" name="email" value="shentonghome@qq.com">
+        <br>
+        <input type="password" name="password">
+        <input type="submit">
+    </form>
+    {% include 'test.html' %}
+{% endblock %}
+
+
+
